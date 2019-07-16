@@ -1,5 +1,6 @@
 function addPromise(num) {
   return new Promise((resolve, reject) => {
+    // rejectによるPromiseのリジェクト
     setTimeout(() => reject(new Error('Fail addPromise.')), 100);
   }); 
 }
