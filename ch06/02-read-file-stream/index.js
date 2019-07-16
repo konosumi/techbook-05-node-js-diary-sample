@@ -11,6 +11,7 @@ function showMemoryUsage() {
 }
 
 // ファイル読み込みストリームの作成
+// 注釈：大容量のdata.txtはご自身で用意をお願い申し上げます
 fs.createReadStream(__dirname + '/data.txt', 'utf8')
   .on('data', data => {
     // ストリーム経由で到着したデータ量
