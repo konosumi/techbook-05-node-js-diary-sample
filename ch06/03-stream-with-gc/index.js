@@ -1,3 +1,4 @@
+// Execute like a node --expose-gc index.js
 const fs = require('fs');
 
 function showMemoryUsage() {
